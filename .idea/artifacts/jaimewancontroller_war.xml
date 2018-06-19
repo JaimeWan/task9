@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jaimewancontroller:war">
+    <output-path>$PROJECT_DIR$/jaimewancontroller/target</output-path>
+    <root id="archive" name="jaimewan-controller.war">
+      <element id="artifact" artifact-name="jaimewancontroller:war exploded" />
+    </root>
+  </artifact>
+</component>

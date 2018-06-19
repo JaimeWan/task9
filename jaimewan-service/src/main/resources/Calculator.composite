@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<composite xmlns="http://docs.oasis-open.org/ns/opencsa/sca/200912"
+           xmlns:tuscany="http://tuscany.apache.org/xmlns/sca/1.1"
+           targetNamespace="http://sample"
+           xmlns:sample="http://sample"
+           xmlns:scallop="http://scallop/xmlns/sca/1.1"
+           name="Calculator" >
+    <component name="CalculatorServiceComponent">
+        <implementation.java class="com.service.Calculator" />
+        <reference name="add" target="AddComponent"/>
+    </component>
+
+    <component name="AddComponent">
+        <implementation.java class="com.service.IAddImpl" />
+    </component>
+</composite>
